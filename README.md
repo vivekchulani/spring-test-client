@@ -1,4 +1,4 @@
-# spring-test-client
+# Spring Cloud Config
 
 The idea of a config server is to be able to externalize properties or resource files as the values of these resources vary during runtime.
 
