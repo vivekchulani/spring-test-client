@@ -1,6 +1,12 @@
 server:
   port: 8080
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
 spring:
   application:
     name: spring-test-client
@@ -11,3 +17,11 @@ spring:
       enabled: true
     config:
       uri: http://localhost:8888
+    bus:
+      id: spring-test-client:dev
+      refresh:
+        enabled: true
+      env:
+        enabled: true
+  kafka:
+    bootstrap-servers: http://localhost:9092
