@@ -5,7 +5,7 @@ WORKDIR /app
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 
-RUN mvn clean install
+RUN ./mvnw dependency:go-offline
 
 COPY src ./src
 
